@@ -11,7 +11,7 @@ services:
     ports:
       - 8085:80
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     networks:
       - nginx_net
 

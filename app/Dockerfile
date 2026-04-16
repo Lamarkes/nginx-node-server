@@ -2,7 +2,7 @@ FROM node:24-alpine
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY . ./app
 
 EXPOSE 3000
 
