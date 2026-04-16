@@ -31,7 +31,7 @@ docker build -t node-server .
 5. Execute o docker-compose
 
 ```shell
-docker run up -d
+docker compose up -d
 ```
 
 6. Acesse o caminho:
