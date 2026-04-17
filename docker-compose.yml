@@ -16,6 +16,16 @@ services:
       - nginx_net
 
   nodeserver:
-    image: node-server:latest
+    build: ./services/app-hello
+    networks:
+      - nginx_net
+  
+  nodetime:
+    build: ./services/app-time
+    networks:
+      - nginx_net
+  
+  nodeuser:
+    build: ./services/app-api
     networks:
       - nginx_net
