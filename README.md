@@ -11,9 +11,10 @@ Atualmente o projeto esta dividido em 3 serviços simples rodando em node:
 - app-hello (aplicação simples com uma mensagem)
 - app-time (aplicação que gera mensagem de acordo com o horario)
 
+- nginx (arquivo de configuraçao do nginx para configuraçao do proxy reverso e load balancer)
+
 ### Como rodar
 
-#### Requisitos:
 1. Certifique-se de que possui o Docker instalado e esteja executando:
 ```shell
 docker --version 
