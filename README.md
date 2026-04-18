@@ -36,7 +36,7 @@ cd nginx-node-server
 chmod +x start.sh
 ```
 
-5. Acesse o caminho:
+5. Execute o script de inicialização
 ```shell
-http://node.127.0.0.1.nip.io:8085
-```
+./start.sh
+``` 
