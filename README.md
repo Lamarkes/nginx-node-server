@@ -3,6 +3,14 @@
 ### Sobre
 Um projeto simples utilizando Node, para estudos de containers Docker(Dockerfile + docker-compose) e implementação de proxy reverse com Ngnix.
 
+O projeto utiliza nip.io ( serviço DNS gratuito e de código aberto que mapeia qualquer endereço IP para um nome de host (domínio)) utilizado para facilitar nos testes.
+
+Atualmente o projeto esta dividido em 3 serviços simples rodando em node:
+
+- app-api (uma aplicaçao simples simulando uma api de usuarios)
+- app-hello (aplicação simples com uma mensagem)
+- app-time (aplicação que gera mensagem de acordo com o horario)
+
 ### Como rodar
 
 #### Requisitos:
@@ -22,23 +30,13 @@ git clone https://github.com/Lamarkes/nginx-node-server.git
 cd nginx-node-server
 ```
 
-4. Execute o Dockerfile
+4. Torne o script 'start.sh' executavel
 
 ```shell
-docker build -t node-server .
+chmod +x start.sh
 ```
 
-5. Execute o docker-compose
-
-```shell
-docker compose up -d
-```
-
-6. Acesse o caminho:
+5. Acesse o caminho:
 ```shell
 http://node.127.0.0.1.nip.io:8085
 ```
-
-7. Será exibida a mensagem:
-
-```'Hello, this is a Node Server'```
